@@ -1,10 +1,12 @@
 export abstract class Produto {
 
+	// Atributos
     private _id: number;
     private _nome: string;
     private _tipo: number;
     private _preco: number;
 
+	// Método Construtor
 	constructor(id: number, nome: string, tipo: number, preco: number) {
 		this._id = id;
 		this._nome = nome;
@@ -12,6 +14,7 @@ export abstract class Produto {
 		this._preco = preco;
 	}
 
+	// Métodos Get e Set
 	public get id(): number {
 		return this._id;
 	}
@@ -61,12 +64,12 @@ export abstract class Produto {
         }
 
         console.log("\n\n*****************************************************");
-        console.log("Dados da Farmácia");
+        console.log("Dados do Produto");
         console.log("*****************************************************");
-        console.log(`ID do Produto: ${this._id}`);
-        console.log(`Nome do Produto: ${this._nome}`);
-        console.log(`Tipo do Produto: ${tipo}`);
-        console.log(`Preço do Produto: ${this._preco}`);
+        console.log(`ID: ${this._id}`);
+        console.log(`Nome: ${this._nome}`);
+        console.log(`Tipo: ${tipo}`);
+        console.log(`Preço: R$ ${this._preco.toFixed(2)}`);
         
     }
 

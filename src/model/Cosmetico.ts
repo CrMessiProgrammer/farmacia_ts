@@ -2,14 +2,16 @@ import { Produto } from "./Produto";
 
 export class Cosmetico extends Produto {
 
+    // Atributo específico da Classe Cosmetico
     private _fragancia: string;
 
-
+    // Método Construtor
     constructor(id: number, nome: string, tipo: number, preco: number, fragancia: string) {
         super(id, nome, tipo, preco);
         this._fragancia = fragancia;
     }
 
+    // Métodos Get e Set
     public get fragancia(): string {
         return this._fragancia;
     }
@@ -20,7 +22,7 @@ export class Cosmetico extends Produto {
 
     public visualizar() {
         super.visualizar();
-        console.log(`${this._fragancia}`);
+        console.log(`Fragrância: ${this._fragancia}`);
     }
 
 }

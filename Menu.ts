@@ -18,7 +18,7 @@ export function main() {
         console.log("            2 - Listar todas os Produtos             ");
         console.log("            3 - Buscar Produto por Id                ");
         console.log("            4 - Atualizar Dados do Produto           ");
-        console.log("            5 - Apagar um Produto                    ");
+        console.log("            5 - Apagar Produto                       ");
         console.log("            6 - Sair                                 ");
         console.log("                                                     ");
         console.log("*****************************************************");
@@ -63,7 +63,7 @@ export function main() {
                 break;
             case 5:
                 console.log(colors.fg.whitestrong, 
-                    "\n\nApagar um Produto\n\n", colors.reset);
+                    "\n\nApagar Produto\n\n", colors.reset);
 
                 keyPress()
                 break;
