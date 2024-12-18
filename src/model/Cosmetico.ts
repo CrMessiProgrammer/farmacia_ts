@@ -22,7 +22,7 @@ export class Cosmetico extends Produto {
 
     public visualizar() {
         super.visualizar();
-        console.log(`Fragrância: ${this._fragancia}`);
+        console.log(`Fragância: ${this._fragancia}`);
     }
 
 }
